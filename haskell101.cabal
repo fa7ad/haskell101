@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a548736da4372d84c8d8da44ee150beb30edd7ca13425a642ba3d5f9f97be3f3
+
+name:           haskell101
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/fa7ad/haskell101#readme>
+homepage:       https://github.com/fa7ad/haskell101#readme
+bug-reports:    https://github.com/fa7ad/haskell101/issues
+author:         Fahad Hossain
+maintainer:     setnamefahad AT gmail DOT com
+copyright:      Fahad Hossain
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/fa7ad/haskell101
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_haskell101
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable haskell101-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell101
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , haskell101
+  default-language: Haskell2010
+
+test-suite haskell101-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_haskell101
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , haskell101
+  default-language: Haskell2010
