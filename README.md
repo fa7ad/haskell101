@@ -8,4 +8,6 @@ So far I've implemented these toy programs/functions in haskell
 
 * A naive fibonacci function `fib`
 * A fibonacci list generator `fibonacci`
+* A simple fizzbuzz checker `fizzbuzz`
+* A fizzbuzz range checker `fizzbuzzGen`
 
